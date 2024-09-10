@@ -17,6 +17,6 @@ class Quadrado : Forma
         }
         public void VerArea()
         {
-            Console.WriteLine("Nome: " + this.Nome + "\n" + "Area: " + this.Area());
+            Console.WriteLine("Nome: " + this.Nome + "\n" + "Area: " + this.Area() + "m²");
         }
     }
