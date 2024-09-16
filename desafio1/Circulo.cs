@@ -1,6 +1,12 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-class Circulo : Forma
+namespace ConsoleApp1
+{
+    class Circulo : Forma
     {
         public double Raio { get; set; }
 
@@ -12,7 +18,7 @@ class Circulo : Forma
 
         public override double Area()
         {
-            double area = 3.1415 * (this.Raio*this.Raio);
+            double area = 3.1415 * (this.Raio * this.Raio);
             return area;
         }
         public void VerArea()
@@ -20,3 +26,4 @@ class Circulo : Forma
             Console.WriteLine("Nome: " + this.Nome + "\n" + "Area: " + this.Area() + "m²");
         }
     }
+}
