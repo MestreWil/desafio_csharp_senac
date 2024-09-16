@@ -1,6 +1,13 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Metadata;
+using System.Text;
+using System.Threading.Tasks;
 
-class Quadrado : Forma
+namespace ConsoleApp1
+{
+    class Quadrado : Forma
     {
         public double Lado { get; set; }
 
@@ -17,6 +24,7 @@ class Quadrado : Forma
         }
         public void VerArea()
         {
-            Console.WriteLine("Nome: " + this.Nome + "\n" + "Area: " + this.Area() + "m²");
+            Console.WriteLine("Nome: " + this.Nome + "\n" + "Area: " + this.Area());
         }
     }
+}
